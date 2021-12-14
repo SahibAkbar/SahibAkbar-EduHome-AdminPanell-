@@ -7153,11 +7153,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SahibAkbar\\Desktop\\BackEnd\\EduHomeProcekt\\Eduhome\\Eduhome.csproj",
+      "projectUniqueName": "C:\\Users\\SahibAkbar\\Desktop\\BackEnd\\EduHomeProcekt(Edmin)\\Eduhome\\Eduhome.csproj",
       "projectName": "Eduhome",
-      "projectPath": "C:\\Users\\SahibAkbar\\Desktop\\BackEnd\\EduHomeProcekt\\Eduhome\\Eduhome.csproj",
+      "projectPath": "C:\\Users\\SahibAkbar\\Desktop\\BackEnd\\EduHomeProcekt(Edmin)\\Eduhome\\Eduhome.csproj",
       "packagesPath": "C:\\Users\\SahibAkbar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SahibAkbar\\Desktop\\BackEnd\\EduHomeProcekt\\Eduhome\\obj\\",
+      "outputPath": "C:\\Users\\SahibAkbar\\Desktop\\BackEnd\\EduHomeProcekt(Edmin)\\Eduhome\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SahibAkbar\\AppData\\Roaming\\NuGet\\NuGet.Config",

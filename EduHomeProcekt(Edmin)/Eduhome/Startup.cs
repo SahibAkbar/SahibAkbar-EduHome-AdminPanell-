@@ -50,16 +50,18 @@ namespace Eduhome
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
-            {                
+            {
+                endpoints.MapAreaControllerRoute(
+                    name: "Area",
+                    areaName: "Admin",
+                    pattern: "{admin}/{controller=Home}/{action=Index}/{id?}"
+                    );
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-                endpoints.MapAreaControllerRoute(
-                    name:"Area",
-                    areaName: "Admin",
-                    pattern: "{admin}/{controller=Home}/{action=Index}/{id?}"
-                    );
+                
             });
         }
     }
