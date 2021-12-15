@@ -27,7 +27,7 @@ using Eduhome.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"05f5373048234ccf6fb076541602c0e3a70109a3", @"/Views/CourseDetails/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2aed6dae039959817b387d18fbac4b5b4b48e838", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6091ccab12f21ca0012fc9480c7c06eee40dc83c", @"/Views/_ViewImports.cshtml")]
     public class Views_CourseDetails_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Eduhome.Models.ViewModels.HomeModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("contact-form"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

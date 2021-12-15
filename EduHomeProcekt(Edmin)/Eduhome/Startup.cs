@@ -1,6 +1,7 @@
 using Eduhome.EduHomeDbContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,7 +27,12 @@ namespace Eduhome
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //services.AddSession(option =>
+            //{
+            //    option.IdleTimeout = TimeSpan.FromSeconds(20);
+            //});
             services.AddDbContext<EduHomeDb>(option => option.UseSqlServer(Configuration.GetConnectionString("EduHomeDb")));
+            //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

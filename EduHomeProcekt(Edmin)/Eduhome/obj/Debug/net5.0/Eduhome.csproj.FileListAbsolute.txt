@@ -1183,3 +1183,7 @@ C:\Users\SahibAkbar\Desktop\BackEnd\EduHomeProcekt(Edmin)\Eduhome\obj\Debug\net5
 C:\Users\SahibAkbar\Desktop\BackEnd\EduHomeProcekt(Edmin)\Eduhome\obj\Debug\net5.0\ref\Eduhome.dll
 C:\Users\SahibAkbar\Desktop\BackEnd\EduHomeProcekt(Edmin)\Eduhome\obj\Debug\net5.0\Eduhome.pdb
 C:\Users\SahibAkbar\Desktop\BackEnd\EduHomeProcekt(Edmin)\Eduhome\obj\Debug\net5.0\Eduhome.genruntimeconfig.cache
+C:\Users\SahibAkbar\Desktop\BackEnd\EduHomeProcekt(Edmin)\Eduhome\obj\Debug\net5.0\Razor\Areas\Admin\Views\Social\Create.cshtml.g.cs
+C:\Users\SahibAkbar\Desktop\BackEnd\EduHomeProcekt(Edmin)\Eduhome\obj\Debug\net5.0\Razor\Areas\Admin\Views\Social\Update.cshtml.g.cs
+C:\Users\SahibAkbar\Desktop\BackEnd\EduHomeProcekt(Edmin)\Eduhome\obj\Debug\net5.0\Razor\Areas\Admin\Views\Course\Index.cshtml.g.cs
+C:\Users\SahibAkbar\Desktop\BackEnd\EduHomeProcekt(Edmin)\Eduhome\obj\Debug\net5.0\Razor\Areas\Admin\Views\Course\Create.cshtml.g.cs

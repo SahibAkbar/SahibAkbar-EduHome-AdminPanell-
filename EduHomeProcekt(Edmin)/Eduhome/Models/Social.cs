@@ -10,11 +10,11 @@ namespace Eduhome.Models
     {
         [Key]
         public int Id { get; set; }
-        [MaxLength(30)]
+        [MaxLength(30,ErrorMessage ="30-dan sora yazmagi dusunme haa")]
         public string Name { get; set; }
-        [MaxLength(100)]
+        [MaxLength(100, ErrorMessage = "100-dan sora yazmagi dusunme haa")]
         public string Icon { get; set; }
-        [MaxLength(100)]
+        [MaxLength(100, ErrorMessage = "100-dan sora yazmagi dusunme haa")]
         public string Link { get; set; }
     }
 }

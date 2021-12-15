@@ -1,0 +1,39 @@
+﻿@model Social
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form style="margin-left: 100px;" asp-area="Admin" asp-controller="Social" asp-action="Update" method="post">
+                <div asp-validation-summary="All" style="color:red;"></div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Name" class="form-label">Name</label>
+                    <input class="form-control" asp-for="@Model.Name">
+                    <br />
+                    <span asp-validation-for="@Model.Name" style="color:red;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="@Model.Icon" class="form-label">Icon</label>
+                    <input class="form-control" asp-for="@Model.Icon">
+                    <br />
+                    <span asp-validation-for="@Model.Icon" style="color:red;"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Link" class="form-label">Link</label>
+                    <input class="form-control" asp-for="@Model.Link">
+                    <br />
+                    <span asp-validation-for="@Model.Link" style="color:red;"></span>
+                </div>
+
+                <input class="form-control" type="hidden" asp-for="@Model.Id">
+
+                <button type="submit" class="btn btn-primary">Update</button>
+                <a asp-area="Admin" asp-controller="Social" asp-action="Index">Back to list</a>
+            </form>
+        </div>
+    </div>
+</div>
+

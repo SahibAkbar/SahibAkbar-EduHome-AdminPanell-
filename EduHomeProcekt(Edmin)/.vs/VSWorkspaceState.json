@@ -5,8 +5,9 @@
     "\\Eduhome\\Areas",
     "\\Eduhome\\Areas\\Admin",
     "\\Eduhome\\Areas\\Admin\\Views",
-    "\\Eduhome\\Areas\\Admin\\Views\\Shared"
+    "\\Eduhome\\Areas\\Admin\\Views\\Shared",
+    "\\Eduhome\\Areas\\Admin\\Views\\Social"
   ],
-  "SelectedNode": "\\Eduhome\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+  "SelectedNode": "\\Eduhome\\Areas\\Admin\\Views\\Social\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }

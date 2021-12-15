@@ -1,0 +1,67 @@
+﻿@model List<Course>
+@*@inject IHttpContextAccessor HttpContextAccessor*@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container" style="width: 100%;">
+    <div class="row">
+        <div class="col-lg-12">
+            <a class="btn btn-primary mb-3" asp-area="Admin" asp-controller="Course" asp-action="Create">Create</a>
+        </div>
+        @*<div class="col-lg-12">
+                @if (HttpContextAccessor.HttpContext.Session.GetString("NullIdError")!="null")
+                {
+                    <div class="alert alert-danger">
+                        @HttpContextAccessor.HttpContext.Session.GetString("NullIdError")
+                    </div>
+
+                    HttpContextAccessor.HttpContext.Session.SetString("NullIdError", "null");
+                }
+            </div>*@
+        <hr />
+        <div class="col-lg-12 mt-5">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Catagory</th>
+                        <th scope="col">Tag</th>
+                        <th scope="col">Content</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{ int i = 0;
+                        foreach (var course in Model)
+                        {
+                            i++;
+                                        <tr>
+                                            <th scope="row">@i</th>
+                                            <td> <img style=" width: 250px; border-radius: 10px;" src="~/Uploads/@course.Image" alt="Alternate Text" /></td>
+                                            <td>@course.Name</td>
+                                            <td>@course.CourseCategory.Name</td>
+                                            <td>
+                                                @foreach (var tagToCourse in course.TagToCourses)
+                                                {
+                                                    <span> @tagToCourse.Tag.Name </span>
+                                                }
+                                            </td>
+                                            <td>@(course.Content!=null && course.Content.Length>100? course.Content.Substring(0,100):course.Content)</td>
+                                            <td>
+                                                <a class="btn btn-success" asp-area="Admin" asp-controller="Course" asp-action="Update" asp-route-id="@course.Id" style=" margin-bottom: 20px;">Update</a>
+                                                <a class="btn btn-danger" asp-area="Admin" asp-controller="Course" asp-action="Delete" asp-route-id="@course.Id" onclick="return confirm('Deqiq silmek isteyirsen Qaqaa(Bax silirem haaaaa)?')">Delete</a>
+                                            </td>
+
+                                        </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
